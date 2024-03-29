@@ -117,6 +117,12 @@ func (l DoublyLinkedList) Head_val() int {
 
 }
 
+func (l DoublyLinkedList) Tail_val() int {
+
+	return l.Tail.val
+
+}
+
 func (l DoublyLinkedList) Debug_iter() {
 
 	var now = l.Head
