@@ -111,6 +111,12 @@ func (l *DoublyLinkedList) Remove_head() {
 
 }
 
+func (l DoublyLinkedList) Head_val() int {
+
+	return l.Head.val
+
+}
+
 func (l DoublyLinkedList) Debug_iter() {
 
 	var now = l.Head

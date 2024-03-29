@@ -3,13 +3,34 @@ package main
 import (
 	dl "dsa/practice/dynamicList"
 	doubly "dsa/practice/linkedList"
+	. "fmt"
 )
 
 //import "fmt"
 
 func main() {
 
-	LinkedList()
+	stack()
+
+}
+
+// Stack
+func stack() {
+	stack := Stack{value: &doubly.DoublyLinkedList{Head: nil, Tail: nil, Size: 0}}
+
+	stack.push(1)
+	stack.push(2)
+	stack.push(3)
+	stack.push(4)
+
+	Println("Head::", stack.peek())
+
+	Println("Length::", stack.length())
+
+	stack.pop()
+
+	Println("Head::", stack.peek())
+	Println("Length::", stack.length())
 }
 
 // Doubly LinkedList
